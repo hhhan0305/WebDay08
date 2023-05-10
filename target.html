@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #target1{
+            width: 100px;
+            height: 50px;
+            background-color: yellow;
+        }
+        #target2{
+            width: 100px;
+            height: 50px;
+            background-color: lightgreen;
+        }*/
+        /* body{
+            margin: 0px; padding: 0px;
+        }
+        p{
+            margin: 0px; padding: 0px;
+            background-color: rgb(87,87,22);
+            border: 1px solid red;
+        }
+        #target{
+            margin: 10px;
+            padding: 20px;
+            border-color: lightgreen;
+            border: 1px solid red;
+        } */
+        /* #targetDiv{
+            margin: 30px;
+            border: 5px solid red;
+            padding: 15px;
+            background-color: yellow;
+            width: 200px;
+        } */
+        /* p,
+        em {
+            border: dotted 3px red;
+        } */
+        /* p{border: dotted 3px red;} */
+        /* body{
+            background-image: url(../Day08/강조되는.jpeg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 300px 300px; 
+        } */
+        /* a:link{color: red;}
+        a:visited{color: green;}
+        a:hover{color: blue;}
+        a:active{color: yellow;} */
+        /* ul.a{list-style-type: circle;}
+        ul.b{list-style-type: disc;}
+        ul.c{list-style: square;} */
+
+        .navi {
+            list-style-type: noen;
+            width: 150px;
+
+            margin: 0;
+            padding: 0;
+            background-color: #39F;
+        }
+        
+
+        .navi li a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .navi>li>a {
+            padding: 10px 50px;
+        }
+
+        li a {
+            background-color: #39f;
+            text-decoration: none;
+            font-weight: bold;
+            color: #000000;
+            display: block;
+            text-align: center;
+            padding: 10px;
+        }
+
+        li a:hover {
+            background-color: #33f;
+            color: white;
+        }
+
+        .navi li ul {
+            /* << li 하위의 ul = 서브메뉴 */
+            display: none;
+        }
+
+        .navi li:hover ul {
+            display: block;
+        }
+
+        .navi li ul {
+            opacity: 0;
+        }
+
+        .navi li:hover ul {
+            opacity: 1;
+            transition: all 1s;
+        }
+
+        .navi li a {
+            transition: all 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <p id="target1">이것은 p 태그 입니다</p>
+    <div id="target2">이것은 div 태그 입니다!</div> -->
+    <!-- <p>여백이 0인 단락입니다.</p>
+    <p id="target">여백이 있는 단락입니다</p> -->
+    <!-- <div id="targetDiv">div Box</div> -->
+    <!-- <p style="text-align: center;">
+        <em>Text</em>
+    </p> -->
+    <!-- <p style="margin-left: auto; margin-right: auto; width: 10%;">Text</p> -->
+    <!-- <h1>배경 설정 하는 법</h1>
+    <p>오늘은 배경 설정하는 날!</p> -->
+
+    <!-- <p><a href="https://www.example.com" target="_blank">이게 바로 링크입니다.</a></p> -->
+
+    <!-- <ul class="a">
+        <li>html5</li>
+        <li>css3</li>
+        <li>js</li>
+    </ul>
+    <ul class="b">
+        <li>html5</li>
+        <li>css3</li>
+        <li>js</li>
+    </ul>
+    <ul class="c">
+        <li>html5</li>
+        <li>css3</li>
+        <li>js</li>
+    </ul> -->
+
+    <!--                                                   -->
+
+    <ul class="navi">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">BLOG</a>
+            <ul>
+                <li><a href="#">웹디자인</a></li>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">JQuery</a></li>
+                <li><a href="#">웹+ 모바일</a></li>
+            </ul>
+        </li>
+        <li><a href="#">ABOUT</a>
+            <ul>
+                <li><a href="#">Q & A</a></li>
+                <li><a href="#">방명록</a></li>
+            </ul>
+        </li>
+        <li><a href="#">CONTACT</a></li>
+    </ul>
+</body>
+
+</html>
